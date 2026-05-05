@@ -3,24 +3,24 @@ import java.time.temporal.ChronoUnit;
 
 public class CheckPrime {
     public static void main(String[] args) {
-        int num=234328768;
-        boolean isPrime=checkPrime(234328768,true);
+        Long num=23432876888L;
+        boolean isPrime=checkPrime(num,false);
         System.out.println(num +" is prime "+isPrime);
 
     }
 
-    private static boolean checkPrime(int i, boolean b) {
+    private static boolean checkPrime(Long i, boolean b) {
         int factors= factors(i,b);
         return factors==2;
     }
 
-    private static int factors(Integer num,boolean optimized){
+    private static int factors(Long num,boolean optimized){
         LocalDateTime startTime=LocalDateTime.now();
         int count=0;
         String approach="";
         if (optimized) {
             approach="Optimized";
-            for(int i=1;(i*i)<=num;i++){
+            for(Long i=1L;(i*i)<=num;i++){
                 if(num%i==0){
                     if (num/i==i) {
                         count++;
@@ -32,7 +32,7 @@ public class CheckPrime {
             }
         }else{
             approach="Non-Optimized";
-            for(int i=1;i<=num;i++){
+            for(Long i =1l;i<=num;i++){
                 if(num%i==0){
                     count++;
                 }
