@@ -4,7 +4,8 @@ import java.time.temporal.ChronoUnit;
 public class CheckPrime {
     public static void main(String[] args) {
         Long num=23432876888L;
-        boolean isPrime=checkPrime(num,false);
+        boolean optimizedApproach=false;
+        boolean isPrime=checkPrime(num,optimizedApproach);
         System.out.println(num +" is prime "+isPrime);
 
     }
