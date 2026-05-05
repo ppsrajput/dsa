@@ -23,6 +23,7 @@ public class CheckPrime {
         LocalDateTime startTime=LocalDateTime.now();
         int count=0;
         String approach="";
+        System.out.println("Program is running");
         if (optimized) {
             approach="Optimized";
             for(Long i=1L;(i*i)<=num;i++){
@@ -47,6 +48,7 @@ public class CheckPrime {
         LocalDateTime endTime=LocalDateTime.now();
         long seconds = ChronoUnit.MILLIS.between(startTime, endTime);
         System.out.println("Time taken is "+seconds+" milli seconds in "+approach+" approach");
+        System.out.println("Program is completed");
         return count;
     }
 
