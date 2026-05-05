@@ -14,8 +14,8 @@ public class CheckPrime {
 
     }
 
-    private static boolean checkPrime(Long i, boolean b) {
-        int factors= factors(i,b);
+    private static boolean checkPrime(Long number, boolean optimizedApproach) {
+        int factors= factors(number,optimizedApproach);
         return factors==2;
     }
 
