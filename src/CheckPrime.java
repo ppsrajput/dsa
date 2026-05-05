@@ -6,7 +6,11 @@ public class CheckPrime {
         Long num=23432876888L;
         boolean optimizedApproach=false;
         boolean isPrime=checkPrime(num,optimizedApproach);
-        System.out.println(num +" is prime "+isPrime);
+        if (isPrime) {
+            System.out.println(num +" is prime number");
+        }else{
+            System.out.println(num +" is prime not number");
+        }
 
     }
 
