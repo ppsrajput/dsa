@@ -11,29 +11,16 @@ public class PrefixSumArray {
 
         for(int i=0;i<10;i++){
             Random random = new Random();
-
             int first = random.nextInt(9);
-
-            // Second number: first to 15
             int second = random.nextInt(10 - first) + first;
 
             quries[i][0]=first;
             quries[i][1]=second;
         }
         sumOfFromAndToIndices(true,ar,quries);
-
-
-
-//    for (int[] a:quries){                                                                                                                           1
-//        Arrays.toString(a);
-//        }
-
-
      }
 
      public static void sumOfFromAndToIndices(boolean optimized,int[] ar,int[][] queries){
-
-
          if (optimized) {
              int[] pfsarray=new int[ar.length];
              pfsarray[0] = ar[0];
@@ -49,7 +36,6 @@ public class PrefixSumArray {
                  end=queries[i][1];
 
                  System.out.println("Sum from "+start+" to "+end+" is "+(start==0?(pfsarray[end]):pfsarray[end]-pfsarray[start-1]));
-
              }
          }else {
 
