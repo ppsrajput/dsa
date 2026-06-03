@@ -1,6 +1,6 @@
 public class SubArrays {
     public static void main(String[] args) {
-        int[] array=new int[]{1,2,3};
+        int[] array=new int[]{1,2,3,4,5,6};
        // printSubArray(array,0,2);
         //print all sub arrays of the above array
 //        System.out.println("All sub arrays for "+ Arrays.toString(array));
@@ -11,6 +11,22 @@ public class SubArrays {
             withStartEndIndcies( array,i);
 
         }
+
+
+
+
+//        for(int i=0;i<array.length;i++){
+//            for(int j=i;j<array.length;j++){
+//                for(int k=i;k<=j;k++){
+//                    System.out.print(array[k]);
+//                }
+//                System.out.println();
+//            }
+
+
+
+
+
     }
 
     private static void withLength(int start, int[] array) {
