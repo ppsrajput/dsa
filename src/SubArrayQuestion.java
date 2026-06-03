@@ -25,7 +25,7 @@ public class SubArrayQuestion {
 //        System.out.println(min);
 
 
-       int answer=Integer.MAX_VALUE;
+       int answer=array.length;
 
        for(int i=0;i<array.length;i++){
            for( int end=i;end<array.length;end++){
