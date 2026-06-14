@@ -1,6 +1,6 @@
 public class FindPairsOfCharacters {
     public static void main(String[] args) {
-        int count=find( "sdagadfgdfaggad",true);
+        int count=find( "gsdagadfgdfaggad",true);
         System.out.println("Total AG Pairs are "+count);
     }
     static int find(String string , boolean optimized){
@@ -18,16 +18,16 @@ public class FindPairsOfCharacters {
                 }
             }
         }else{
-
             int aCount=0;
-            for(int i=0;i<charArray.length-1;i++){
+            for(int i=0;i<charArray.length;i++){
                 if(charArray[i]=='a'){
                     aCount++;
-                }
-                else if(charArray[i]=='g'){
-                    count=count+aCount;
+                }if(charArray[i]=='g'){
+                   count=count+aCount;
                 }
             }
+
+
 
 
         }
