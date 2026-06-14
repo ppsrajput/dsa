@@ -6,7 +6,7 @@ public class SubArrayQuestionOptimized {
         * */
 
         // Brute Force Approach
-        int[] array=new int[]{1,1,1};
+        int[] array=new int[]{1,2,1,3,4,4,5,5,3,4,5,6};
        // int[] array=new int[]{1,2,3};
         int max=Integer.MIN_VALUE;
         int min=Integer.MAX_VALUE;
