@@ -6,7 +6,7 @@ public class SubArrayQuestionOptimized {
         * */
 
         // Brute Force Approach
-        int[] array=new int[]{1,2,1,3,4,4,5,5,3,4,5,6};
+        int[] array=new int[]{111,2,1,3,4,4,5,5,3,4,51,-90,-6000};
        // int[] array=new int[]{1,2,3};
         int max=Integer.MIN_VALUE;
         int min=Integer.MAX_VALUE;
@@ -23,25 +23,35 @@ public class SubArrayQuestionOptimized {
         }
 //        System.out.println(min);
 
-        int smallestLength=array.length;
-        for(int x=0;x<array.length;x++){
-            if(array[x]==max){
-                maxIndex=x;
 
-                if(minIndex!=-1){
+        int smallestLength=array.length;
+
+        for(int i=0;i<array.length;i++){
+            if(array[i]==max){
+                maxIndex=i;
+                if (minIndex != -1) {
+
                     int length = maxIndex - minIndex + 1;
-                    if(length<smallestLength)smallestLength=length;
+                    if (smallestLength> length) {
+                        smallestLength= length;
+                    }
+
                 }
+
+
             }
-            if(array[x]==min){
-                minIndex=x;
-                if(maxIndex!=-1){
+            if(array[i]==min){
+                minIndex=i;
+                if (maxIndex != -1) {
+
                     int length = minIndex - maxIndex + 1;
-                    if(length<smallestLength)smallestLength=length;
+                    if (smallestLength> length) {
+                        smallestLength=length;
+                    }
+
                 }
             }
         }
-
         System.out.println(smallestLength);
 
 
