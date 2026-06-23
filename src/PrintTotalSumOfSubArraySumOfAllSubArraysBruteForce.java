@@ -18,5 +18,6 @@ public class PrintTotalSumOfSubArraySumOfAllSubArraysBruteForce {
             }
         }
         System.out.println("totalSum "+totalSum);
+        ///  TC is  Big(N^3)
     }
 }
