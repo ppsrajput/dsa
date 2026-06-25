@@ -2,7 +2,7 @@ public class TotalSubArraysOfLengthKBruteForce {
 
     public static void main(String[] args) {
        int[] array={3,2,5,1,6,8,10};
-       int k=5;
+       int k=4;
 
        int answer=0;
 
