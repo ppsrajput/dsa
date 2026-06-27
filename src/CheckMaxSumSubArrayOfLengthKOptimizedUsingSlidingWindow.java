@@ -1,4 +1,4 @@
-public class CheckMaxSumSubArrayOfLengthKOptimizedUsingSLidingWIndow {
+public class CheckMaxSumSubArrayOfLengthKOptimizedUsingSlidingWindow {
 
     public static void main(String[] args)  {
         int[] array={-3,4,-2,5,3,-2,8,2,-1,4};
@@ -35,9 +35,7 @@ public class CheckMaxSumSubArrayOfLengthKOptimizedUsingSLidingWIndow {
             s++;e++;
         }
         System.out.println(maxSum);
-        // if K=1 then TC is N
-        // if K=N then tc is N
-        // if K is N/2 then TC is N^2
+        // TC is N
 
 
     }
