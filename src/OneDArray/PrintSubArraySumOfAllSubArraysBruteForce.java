@@ -1,11 +1,10 @@
-package OneDayArray;
+package OneDArray;
 
-public class PrintTotalSumOfSubArraySumOfAllSubArraysBruteForce {
-
+public class PrintSubArraySumOfAllSubArraysBruteForce {
     public static void main(String[] args) {
-        int[] array={3,2,5};
+        int[] array={2,1,5,6,4,5};
 
-        int totalSum=0;
+
         for(int s=0;s<array.length;s++){
             for (int e=s;e<array.length;e++){
                 int sum=0;
@@ -15,11 +14,9 @@ public class PrintTotalSumOfSubArraySumOfAllSubArraysBruteForce {
                     sum+=array[i];
                 }
                 System.out.print("} sum is " +sum );
-                totalSum+=sum;
                 System.out.println("");
             }
         }
-        System.out.println("totalSum "+totalSum);
-        ///  TC is  Big(N^3)
+
     }
 }

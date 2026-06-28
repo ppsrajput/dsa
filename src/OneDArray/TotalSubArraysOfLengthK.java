@@ -1,6 +1,6 @@
-package OneDayArray;
+package OneDArray;
 
-public class TotalSubArraysOfMaxSumOfSubArrayWIthLengthKOptimized {
+public class TotalSubArraysOfLengthK {
 
     public static void main(String[] args) {
        int[] array={-3,4,-2,5,3,-2,8,2,-1,4};
@@ -17,11 +17,11 @@ public class TotalSubArraysOfMaxSumOfSubArrayWIthLengthKOptimized {
 
             for(int j=i;j<i+k;j++){
                 sum+=array[j];
-                if (j<i+k) {
-                    System.out.print(array[j]+",");
-
-                }else if (i+k-1==j) {
+                 if (j==i+k-1) {
                     System.out.print(array[j]);
+
+                }else if (j<i+k) {
+                    System.out.print(array[j]+",");
 
                 }
             }

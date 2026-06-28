@@ -1,4 +1,4 @@
-package OneDayArray;
+package OneDArray;
 
 public class PrintAllSubArrays {
     public static void main(String[] args) {

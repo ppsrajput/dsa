@@ -1,4 +1,4 @@
-package OneDayArray;
+package OneDArray;
 
 public class CountRightLeaders {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package OneDayArray;
+package OneDArray;
 
 public class PrintTotalSumOfSubArraySumOfAllSubArraysOptimizedUsingContributionTechnique {
 

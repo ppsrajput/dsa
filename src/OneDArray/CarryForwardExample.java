@@ -1,4 +1,4 @@
-package OneDayArray;
+package OneDArray;
 
 public class CarryForwardExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package OneDayArray;
+package OneDArray;
 
 public class PrintSubArraySumOfAllSubArraysOptimized {
     public static void main(String[] args) {
