@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class PrintSubArraySumOfAllSubArraysOptimized {
     public static void main(String[] args) {
         int[] array={1,2,3};

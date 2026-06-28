@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class PrintAllSubArrays {
     public static void main(String[] args) {
         int[] array={3,2,5};

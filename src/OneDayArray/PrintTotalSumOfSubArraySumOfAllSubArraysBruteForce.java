@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class PrintTotalSumOfSubArraySumOfAllSubArraysBruteForce {
 
     public static void main(String[] args) {

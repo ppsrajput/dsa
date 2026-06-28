@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package OneDayArray;
 
 public class ReverseArray {
     public static void main(String[] args) {

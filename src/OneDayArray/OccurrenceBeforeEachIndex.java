@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class OccurrenceBeforeEachIndex {
     public static void main(String[] args) {
 

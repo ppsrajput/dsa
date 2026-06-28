@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package OneDayArray;
 
 public class TotalSubArraysOfLengthK {
 

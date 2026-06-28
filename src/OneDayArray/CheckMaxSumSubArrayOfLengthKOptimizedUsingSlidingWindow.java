@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class CheckMaxSumSubArrayOfLengthKOptimizedUsingSlidingWindow {
 
     public static void main(String[] args)  {

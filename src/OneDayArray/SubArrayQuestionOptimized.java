@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class SubArrayQuestionOptimized {
     public static void main(String[] args) {
         /*

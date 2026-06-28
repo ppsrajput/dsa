@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class TotalSubArraysOfLengthKBruteForce {
 
     public static void main(String[] args) {

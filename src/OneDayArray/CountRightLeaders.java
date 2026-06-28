@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class CountRightLeaders {
     public static void main(String[] args) {
         int [] ar={16,13,17,4,3,5,2,80,9};

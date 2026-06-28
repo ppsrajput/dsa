@@ -1,3 +1,5 @@
+package OneDayArray;
+
 public class SubArrayQuestionBruteForce {
     public static void main(String[] args) {
         /*
