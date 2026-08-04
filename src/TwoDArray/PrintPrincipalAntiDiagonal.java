@@ -19,6 +19,8 @@ public class PrintPrincipalAntiDiagonal {
             System.out.println(arr[i][arr.length-1-i]);
         }
 
+
+
         
 
 
