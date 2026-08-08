@@ -1,6 +1,8 @@
 package Sorting;
 
 
+import OneDArray.ReverseArray;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -33,17 +35,9 @@ public class CalculateMinimumCostToEmptyAnArray {
         System.out.println("Minimum cost to remove all elements using sort is "+totalCost);
 
         /*Doing same with Reverse Sort*/
+        // Reversing the sorted array so that to make sorted in descending order
 
-        int start=0;
-        int end=array.length-1;
-        while (start<end){
-            int temp=array[start];
-            array[start]=array[end];
-            array[end]=temp;
-
-            start++;end--;
-        }
-        System.out.println(Arrays.toString(array));
+        ReverseArray.reverse(array,0,array.length-1);
 
          multiplier = 1;
          totalCost=0;

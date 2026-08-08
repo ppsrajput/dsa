@@ -1,22 +1,20 @@
 package OneDArray;
 
+import java.util.Arrays;
+
 public class ReverseArray {
     public static void main(String[] args) {
-        int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] array = new int[]{4,3,2,1};
         reverse(array, 0, array.length - 1);
 
     }
-   static void reverse(int[]array , int start, int end){
-        for(int i=start;i<=end-1;i++){
-            int temp;
-            temp=array[start];
+   public static void reverse(int[]array , int start, int end){
+        while (start<end){
+            int temp=array[start];
             array[start]=array[end];
             array[end]=temp;
-            start++;
-            end--;
-
-
+            start++;end--;
         }
-       // System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
     }
 }
