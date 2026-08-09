@@ -44,7 +44,7 @@ public class CalculateNobleIntegers {
         // Optimized Approach
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
-        ReverseArray.reverse(array,0,array.length-1);
+       // ReverseArray.reverse(array,0,array.length-1);
         for(int i=0;i<array.length;i++){
             if(array[i]<0){
                 System.out.println(array[i]+" can never be a noble integer");
@@ -53,13 +53,22 @@ public class CalculateNobleIntegers {
                     System.out.println(array[i]+" is not a noble integer");
                     continue;
                 }
-                if(array[i]==(array.length-(i+1))){
+                if(array[i]==i){
                     System.out.println(array[i]+" is a noble integer");
                 }else{
                     System.out.println(array[i]+" is not a noble integer");
                 }
             }
         }
+
+//        [8, 5, 4, 3, 1, -5, -10]
+//        8 is not a noble integer
+//        5 is a noble integer
+//        4 is a noble integer
+//        3 is a noble integer
+//        1 is not a noble integer
+//                -5 can never be a noble integer
+//        -10 can never be a noble integer
 
 
 

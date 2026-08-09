@@ -11,7 +11,7 @@ public class BinarySearch {
             int mid=start+(end-start)/2;
 
             if(array[mid]==target){
-                System.out.println("answer is index "+mid);
+                System.out.println("answer is at index "+mid);
                 break;
             }
             if(target<array[mid]){
