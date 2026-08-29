@@ -5,8 +5,7 @@ public class PrintTotalSumOfSubArraySumOfAllSubArraysOptimized {
     public static void main(String[] args) {
         int[] array={3,2,5};
         //{3,5,10}
-        int totalSubArray=(array.length*(array.length+1))/2;
-        System.out.println(totalSubArray);
+
 
 
         int totalSum=0; int count=0;

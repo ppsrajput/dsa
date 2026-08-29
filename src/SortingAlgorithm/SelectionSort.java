@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] array=new int[] {5,6,4,2,2,4,6,2,5,7,2,5,7,4,67,4,67,4};
+        int[] array = new int[]{1,2,3,4};
 
 
         System.out.println("Before Sort "+ Arrays.toString(array));

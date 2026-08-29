@@ -7,8 +7,8 @@ public class PrintTotalSumOfSubArraySumOfAllSubArraysOptimizedUsingContributionT
 
         int length=array.length;
         //{3,5,10}
-        int totalSubArray=(array.length*(array.length+1))/2;
-        System.out.println(totalSubArray);
+//        int totalSubArray=(array.length*(array.length+1))/2;
+//        System.out.println(totalSubArray);
 //        int[] pf=new int[array.length];
 //        int summ=0;
 //        for(int i=0;i<array.length;i++){

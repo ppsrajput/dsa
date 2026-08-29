@@ -32,7 +32,6 @@ public class SubArrayQuestionOptimized {
             if(array[i]==max){
                 maxIndex=i;
                 if (minIndex != -1) {
-
                     int length = maxIndex - minIndex + 1;
                     if (smallestLength> length) {
                         smallestLength= length;
@@ -45,7 +44,6 @@ public class SubArrayQuestionOptimized {
             if(array[i]==min){
                 minIndex=i;
                 if (maxIndex != -1) {
-
                     int length = minIndex - maxIndex + 1;
                     if (smallestLength> length) {
                         smallestLength=length;

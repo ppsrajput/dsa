@@ -1,28 +1,47 @@
+import java.util.Arrays;
+
 public class Test {
     public static void main(String[] args) {
 
-//        int[] array=new int[]{1,2,3,4};
-//
-//        int total=0;
-//        for(int i=0;i<array.length;i++){
-//
-//            int allPossibleStaringIndices = i + 1;
-//            int allPossibleEndingIndices = array.length - i;
-//            int contributionOfIInAllSubArrays = allPossibleStaringIndices * allPossibleEndingIndices;
-//            total=total+(contributionOfIInAllSubArrays * array[i]);
-//
-//        }
-//        System.out.println(total);
 
-        int[] a={10};
-        test(a);
-        System.out.println(a[0]);
+        System.out.println(92^154);
+        int maxProfit=0;
 
+        int[] prices={3,3,5,0,0,3,1,4};
 
-    }
-    static void test(int[] a){
-        a=new int[1];
-        a[0]=50;
+        int originalArrayLength=prices.length;
+
+        int lowestPrice=Integer.MAX_VALUE;
+        int lowestPriceDay=0;
+        for(int i=0;i<prices.length;i++){
+            if(prices[i]<lowestPrice){lowestPrice=prices[i];lowestPriceDay=i+1;}
+        }
+        System.out.println("Lowest price is "+lowestPrice+" on day "+lowestPriceDay);
+
+        int[] newArray=new int[originalArrayLength-lowestPriceDay];
+        for(int i=lowestPriceDay;i<originalArrayLength;i++){
+            newArray[i-lowestPriceDay]=prices[i];
+        }
+        System.out.println(Arrays.toString(prices));
+        System.out.println(Arrays.toString(newArray));
+
+        int  maxPrice=Integer.MIN_VALUE;
+        for(int i=0;i<newArray.length;i++){
+            if(newArray[i]>maxPrice){
+                maxPrice=newArray[i];
+            }
+        }
+        if(lowestPrice<maxPrice){
+            for(int i=0;i<newArray.length;i++){
+                int currentMaxPrice=0;
+                if(newArray[i]>lowestPrice && newArray[i]<maxPrice){
+                    currentMaxPrice=newArray[i];
+                }
+                if(newArray[i]<maxPrice){
+
+                }
+            }
+        }
 
     }
 }
