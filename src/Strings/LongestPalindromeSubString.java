@@ -2,7 +2,7 @@ package Strings;
 
 public class LongestPalindromeSubString {
     public static void main(String[] args) {
-        String a="adaelcddfdcletggte";
+        String a="adaelcdfdcletggte";
         int answer=0;
 
         for(int s=0;s<a.length();s++){
