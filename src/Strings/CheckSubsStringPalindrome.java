@@ -11,7 +11,7 @@ public class CheckSubsStringPalindrome {
 
     }
 
-    private static boolean checkPalindrome(String str,int start,int end) {
+    public static boolean checkPalindrome(String str,int start,int end) {
 
         while(start<end){
             if(!(str.charAt(start)== str.charAt(end))){
