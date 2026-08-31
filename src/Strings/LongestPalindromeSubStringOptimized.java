@@ -2,7 +2,8 @@ package Strings;
 
 public class LongestPalindromeSubStringOptimized {
     public static void main(String[] args) {
-        String a="adaelcdfdcletggte";
+        //String a="adaelcdfdcletggte";
+        String a="aa";
         int answer=0;
         if(a!=null && !a.isEmpty()){
             answer=1;
@@ -12,7 +13,7 @@ public class LongestPalindromeSubStringOptimized {
 
        if(a!=null)
        {
-           int center=1;
+           int center=0;
            while (center<a.length()-1){
                if (a.charAt(center)==a.charAt(center+1)) {
                    if (answer < 2) {
