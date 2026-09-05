@@ -1,15 +1,17 @@
 package InterviewProblems;
 
-public class Question1 {
+public class Question2 {
     public static void main(String[] args) {
         /*
-        * Given a binary array[]. We can atmost replace a single 0 with 1. FInd the maximum
-        * consecutive 1's we can get in the array[] after the replacement
+        * Given a binary array[]. We can atmost swap a single 0 with 1. FInd the maximum
+        * consecutive 1's we can get in the array[] after the swap
         */
 
 
-       // int[] array={0,1,1,1,0,1,1,0,1,1,0};
-        int[] array={1,1,1,1,1,1,0,1};
+       //int[] array={    0,1,1,0,1,1,0,0};
+       int[] array={1,1,0,1,1};
+       int totalOnes= getTotalOnes(array);
+
         int answer=0;
         int zeros=0;
         for(int i=0;i<array.length;i++){
@@ -22,6 +24,7 @@ public class Question1 {
                     while (j>=0 && array[j]==1){
                         j--; left1s++;
                     }
+
                 }
                 if(i< array.length-1){
                     int j=i+1;
@@ -29,9 +32,13 @@ public class Question1 {
                         j++; right1s++;
                     }
                 }
-                i+=right1s;
-                if(answer<(left1s+right1s+1))
-                    answer=left1s+right1s+1;
+                if(answer<(left1s+right1s+1)) {
+                    answer = left1s + right1s + 1;
+                    if(answer>totalOnes){
+                        answer=totalOnes;
+                        break;
+                    }
+                }
             }
         }
         if (zeros>0) {
@@ -39,5 +46,15 @@ public class Question1 {
         }else{
             System.out.println("Answer is "+array.length);
         }
+    }
+
+    private static int getTotalOnes(int[] array) {
+        int total=0;
+        for(int i=0;i<array.length;i++){
+            if(array[i]==1){
+                total++;
+            }
+        }
+        return total;
     }
 }
