@@ -7,12 +7,12 @@ public class Question3 {
 
         // BF
 
-        int[] array={1,0,0,1};
+        int[] array={1,3,2,3,3,3,3,1,3,1,3,1,3};
         int x=0;
 
        int  expectedOccurrence=(array.length/2)+1;
-        System.out.println(array.length);
-        System.out.println(expectedOccurrence);
+//        System.out.println(array.length);
+//        System.out.println(expectedOccurrence);
 
         for(int i=0;i<array.length;i++){
             x=1;

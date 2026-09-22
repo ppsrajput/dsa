@@ -3,7 +3,7 @@ import java.time.temporal.ChronoUnit;
 
 public class CheckPrime {
     public static void main(String[] args) {
-        Long num=23432876888888L;
+        Long num=2343287899L;
         boolean optimizedApproach=false;
         boolean isPrime=checkPrime(num,optimizedApproach);
         if (isPrime) {
