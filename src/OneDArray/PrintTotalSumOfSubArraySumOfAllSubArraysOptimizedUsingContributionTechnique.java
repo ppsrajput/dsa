@@ -3,7 +3,7 @@ package OneDArray;
 public class PrintTotalSumOfSubArraySumOfAllSubArraysOptimizedUsingContributionTechnique {
 
     public static void main(String[] args) {
-       int[] array={3,2,5};
+       int[] array={1,2,3};
 
         int length=array.length;
         //{3,5,10}
