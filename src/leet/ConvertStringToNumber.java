@@ -1,6 +1,6 @@
 package leet;
 
-public class NumberAscii {
+public class ConvertStringToNumber {
     public static void main(String[] args) {
         String s = "21474836489";
 
