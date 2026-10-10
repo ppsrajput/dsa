@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class RainWaterTrappedOptimized {
     public static void main(String[] args) {
-        int[] array={4,2,5,7,4,2,3,6,8,2,3};
+        int[] array={1,8,6,2,5,4,8,3,7};
 
         int[] leftMaxArray=new int[array.length];
         int[] rightMaxArray=new int[array.length];
