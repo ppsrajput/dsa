@@ -5,32 +5,26 @@ public class ContainerWithMostWaterOptimized {
 
 
         int[] height={1,8,6,2,5,4,8,3,7};
-        int max=Integer.MIN_VALUE;
-        int secondMax=Integer.MIN_VALUE;
 
-        int maxIndex=0;
-        int secondMaxIndex=0;
-        for(int i=0;i<height.length;i++){
-            if(height[i]>max){
-                max=height[i];
-                maxIndex=i;
+        int answer=0;
+
+        int left=0;
+        int right= height.length-1;
+
+        while (left<right){
+
+            int min = Integer.min(height[left], height[right]);
+            int water=min*(right-left);
+
+            answer=Integer.max(answer,water);
+
+            if(height[left]<height[right]){
+                left++;
+            }
+            else {
+                right--;
             }
         }
-        System.out.println(max);
-
-        for(int i=0;i<height.length;i++){
-            if((i!=maxIndex)&& height[i]>secondMax && height[i]<=max){
-                secondMax=height[i];
-                secondMaxIndex=i;
-
-            }
-        }
-
-
-        int level=Math.min(max,secondMax);
-        int answer = level * (Math.abs(maxIndex - secondMaxIndex));
-        System.out.println(answer);
-
 
 
     }
